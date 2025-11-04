@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raposo</title>
+  <link rel="stylesheet" href="estilos/loginstyle.css">
+  <link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <section>
+      <img src="imagens/img login.jfif" alt="" width="300px">
+    </section>
+    <form method="post" autocomplete="on">
+      <p>
+        Matrícula:
+        <input type="text" name="matricula" id="imatricula">
+      </p>
+      <p>
+        Senha:
+        <input type="password" name="senha" id="isenha">
+      </p>
+      <p>
+        <input type="submit" value="Enviar" id="Enviar" onclick="logar(); return false">
+      </p>
+    </form>
+  </main>
+  <script>
+
+    function logar() {
+      
+      var matricula = document.getElementById('imatricula').value;
+      var senha = document.getElementById('isenha').value;
+
+      if (matricula == "202215500040" && senha == "Analinda123/") {
+        location.href = "index.html";
+      } else {
+        alert("Matrícula ou senha não coerentes!")
+      }
+
+    }
+
+  </script>
+</body>
+</html>

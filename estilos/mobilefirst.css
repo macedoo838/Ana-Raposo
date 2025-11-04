@@ -1,0 +1,496 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Unbounded:wght@200..900&display=swap');
+
+/** 
+
+fonte de título: Dancing Script
+fonte de texto normal: Unbouded
+cor de texto: rgb(37, 37, 37)
+cor de fundo: #F2EBDC
+cor de outros fundos: #D9C8B4
+
+**/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: rgb(37, 37, 37);
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../imagens/fundo.jfif);
+  background-size: cover;
+  background-repeat: repeat-y;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Unbounded;
+  font-size: 0.8em;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: 'Dancing Script';
+  text-align: center;
+  font-size: 3em
+}
+main {
+  width: 400px;
+  background-image: url(../imagens/fundo\ img\ main.jfif);
+  background-position: top;
+}
+header > h1 { 
+  font-size: 5em;
+}
+main > section#dadosgerais > p.resposta {
+  margin: 5px;
+  font-size: 1.3em;
+}
+main > section#dadosgerais > p.dado {
+  background-color: pink;
+  border-radius: 15px;
+  font-size: 1.7em;
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+main > section#dadosgerais > p#nome {
+  width: 100px;
+}
+main > section#dadosgerais > p#idade {
+ width: 180px;
+}
+main > section#dadosgerais > p#naturalidade {
+  width: 200px;
+}
+main > section#dadosgerais > p#estadocivil {
+  width: 200px;
+}
+main > section#dadosgerais > h1 {
+  font-size: 3em;
+  text-align: center;
+}
+main > section#playerdeana {
+  background-color: rgba(0, 0, 0, 0.438);
+  margin: 20px 5px 20px 5px;
+  padding: 20px;
+  border-radius: 20px;
+}
+main > section#playerdeana > section#player > img {
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: block;
+  border-radius: 5px;
+}
+main > section#playerdeana > h1, section#player > div > h2, section#player > div > p, section#player > div > div > p, section#player > div > div > span  {
+  color: pink;
+}
+main > section#playerdeana > section#player > div#duracao > div#barra {
+  border: 2px solid #D9C8B4;
+  width: 300px;
+  height: 6px;
+  margin: 10px 0px 5px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+main > section#playerdeana > section#player > div#duracao > div#barra:hover {
+  cursor: pointer;
+}
+main > section#playerdeana > section#player > div#duracao > div#barra > div#progress {
+  display: block;
+  border: 2px;
+  height: 5px;
+  transition: 0.5s;
+} 
+main > section#playerdeana > section#player > div#duracao > div#barra > div#ponto {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: -3px;
+}
+main > section#playerdeana > section#player > div#descricao {
+  width: 300px;
+  margin: auto;
+  display: block;  
+}
+main > section#playerdeana > section#player > div#duracao {
+  width: 300px;
+  margin: auto;
+  display: block;    
+}
+
+main > section#playerdeana > section#player > div#duracao > div#tempo  {
+  width: 300px;
+  display: flex;
+  flex-direction: row;   
+  justify-content: space-between;
+}
+main > section#playerdeana > section#player > div#botoes {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main > section#playerdeana > section#player > div#botoes > span {
+  color: pink;
+  font-size: 50px;
+  cursor: pointer;
+}
+main > section#playerdeana > section#player > div#botoes > span:hover {
+  font-size: 55px;
+  transition: 0.3s;
+}
+main > section#playerdeana > section#player > div#botoes > span#previous, main > section#playerdeana > section#player > div#botoes > span#next {
+  font-size: 40px;
+}
+main > section#playerdeana > section#player > div#botoes > span#previous:hover, main > section#playerdeana > section#player > div#botoes > span#next:hover {
+  font-size: 45px;
+}
+main > section#playerdeana > section#player > div#botoes > span#pause {
+  display: none;
+  color: pink;
+  font-size: 50px;
+}
+main > section#playerdeana > section#player > div#botoes > span#pause:hover {
+  font-size: 55px;
+}
+main > section#skills {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main > section#skills > h1 {
+  text-align: center;
+  font-size: 3em;
+}
+main > section#skills > ul {
+  width: 100%;
+  margin: auto;
+}
+main > section#skills > ul > div {
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 20px;
+  cursor: pointer;
+}
+main > section#skills > ul > div > details > summary {
+  height: 50px;
+  cursor: pointer;
+}
+main > section#skills > ul > div > details {
+  cursor: default;
+}
+main > section#skills > ul > div > details > summary > li {
+  padding: 10px 5px 5px 0px;
+  color: rgb(255, 233, 246);
+  cursor: pointer;
+}
+main > section#skills > ul > div > details > p {
+  padding: 0px 5px 5px 10px;
+  color: rgb(255, 233, 246);
+}
+main > section#skills > ul > div#atletismo {
+
+}
+main > section#skills > ul > div#atletismo > details > p {
+  padding: 5px;
+  text-align: justify;
+}
+main > section#skills > ul > div#atletismo > details > div#imagensatletismo {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin: auto;
+}
+main > section#skills > ul > div#atletismo > details > div#imagensatletismo > img#imgatletismo1 {
+  width: 160px;
+  height: 200px;  
+  
+}
+main > section#skills > ul > div#atletismo > details > div#imagensatletismo > img#imgatletismo2{
+  width: 180px;
+  height: 180px;
+}
+main > section#skills > ul > div#inteligencia > details > div#imagensinteligencia {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 25px;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+main > section#skills > ul > div#inteligencia > details > p {
+  text-align: justify;
+  padding: 5px;
+}
+main > section#skills > ul > div#inteligencia > details > div#imagensinteligencia > img {
+  padding: 3px;
+  
+}
+main > section#skills > ul > div#inteligencia > details > div#imagensinteligencia > img#imginteligencia1 {
+  height: 80px;
+  width: 300px;
+  border-radius: 20px 20px 0px 0px;
+}
+main > section#skills > ul > div#inteligencia > details > div#imagensinteligencia > img#imginteligencia2 {
+  order: ;
+}
+main > section#skills > ul > div#inteligencia > details > div#imagensinteligencia > img#imginteligencia3 {
+  border-radius: 0px 0px 20px 20px;
+}
+main > section#skills > ul > div > details >  p, summary > li, summary > section {
+  pad: 5px;
+}
+main > section#skills > ul > div > details > summary > li {
+  list-style: none;
+  margin: 0px 1px 0px 5px;
+  width: 390px;
+}
+main > section#skills > ul > div#beleza > details > p {
+  text-align: center;
+}
+main > section#skills > ul > div#beleza > details > img {
+  width: 300px;
+  margin: auto;
+  display: block;
+  padding: 5px 0px 0px 0px;
+  border-radius: 20px;
+}
+main > section#skills > ul > div#dedicacao > details > div#imagensdedicacao {
+  padding: 20px;
+}
+main > section#skills > ul > div#dedicacao > details > div#imagensdedicacao > img {
+  width: 100%;
+}
+main > section#skills > ul > div#dedicacao > details > div#imagensdedicacao > img#imgdedicacao1 { 
+  border-radius: 20px 20px 0px 0px;
+}
+main > section#skills > ul > div#dedicacao > details > div#imagensdedicacao > img#imgdedicacao2 {  
+  border-radius: 0px 0px 20px 20px;
+}
+main > section#skills > ul > div  > p {
+  text-align: justify;
+}
+main > section#skills > ul > div > details > summary > section {
+  display: block;
+  background-color: rgb(56, 56, 56);
+  border-radius: 5px;
+  height: 10px;
+  margin-bottom: 20px;
+  width: 390px;
+  margin: auto;
+}
+main > section#skills > ul > div > details > summary > section > div {
+  background-color: rgb(255, 197, 252);
+  height: 10px;
+  border-radius: 5px;
+  color: rgba(240, 248, 255, 0);
+}
+main > section#skills > ul > div > details > summary > section > div#barradedicacao {
+  width: 96%;
+}
+main > section#skills > ul > div > details > summary > section > div#barraadaptabilidade {
+  width: 98%;
+}
+main > section#skills > ul > div > details > summary > section > div#barrasociabilidade {
+  width: 92%;
+}
+main > section#skills > p {
+  text-align: justify;
+  padding: 20px;
+}
+main > section#relacoes {
+ display: flex;
+ flex-direction: column; 
+ align-items: center;
+ text-align: justify;
+ justify-content: space-between;
+ padding: 5px;
+}
+main > section#relacoes > div > details > summary > h1 {
+  font-size: 3em;
+  text-align: center;
+  display: block;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+main > section#relacoes > div#textoinicial {
+  font-size: 2em;
+  width: 100vw;
+  padding: 0px;
+}
+main > section#relacoes > div {
+  padding: 20px;
+  margin: 5px;
+}
+main > section#relacoes > div > details {
+  cursor: default;
+}
+main > section#relacoes > div > details > summary {
+  cursor: pointer;
+} 
+main > section#relacoes > div#familia > details {
+  background-color: #ffd4f8cc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+main > section#relacoes > div#familia > details > div#imagensfamilia {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 270px;
+  justify-content: space-evenly;
+  
+}
+main > section#relacoes > div#familia > details > div#imagensfamilia > img {
+  width: 170px;
+}
+main > section#relacoes > div#familia > details >  div#imagensfamilia > img#primeiraimgfamilia {
+  order: 3;
+  border-radius: 0px 0px 20px 0px;
+}
+main > section#relacoes > div#familia > details >  div#imagensfamilia > img#segundaimgfamilia {
+  display: none;
+}
+main > section#relacoes > div#familia > details >  div#imagensfamilia > img#terceiraimgfamilia {
+  order: 0;
+  height: 260px;
+  padding-right: 5px;
+  border-radius: 20px 0px 0px 20px;
+}
+main > section#relacoes > div#familia > details >  div#imagensfamilia > img#quartaimgfamilia {
+  border-radius: 0px 20px 0px 0px;
+}
+main > section#relacoes > div#amigos > details {
+  background-color: #ffd4f8cc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+}
+main > section#relacoes > div#amigos > details >  div#imagensamigos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 330px;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+main > section#relacoes > div#amigos > details >  div#imagensamigos > img {
+  height: 100px;
+  width: 150px;
+}
+main > section#relacoes > div#amigos > details >  div#imagensamigos > img#primeiraimgamigo {
+  height: 260px;
+  width: 180px;
+  border-radius: 20px 20px 20px 20px;
+  padding-right: 10px;
+}
+main > section#relacoes > div#amigos > details >  div#imagensamigos > img#segundaimgamigo {
+  height: 80px;
+  border-radius: 20px 20px 0px 0px;
+}
+main > section#relacoes > div#amigos > details >  div#imagensamigos > img#terceiraimgamigo {
+  height: 120px;
+  border-radius: 0px 0px 0px 0px;
+  padding-bottom: 0px;
+}
+main > section#relacoes > div#amigos > details >  div#imagensamigos > img#quartaimgamigo {
+  border-radius: 0px 0px 20px 20px;
+  padding-top: 0px;
+}
+main > section#relacoes > div#ana > details {
+  background-color: #ffd4f8cc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+}
+main > section#relacoes > div#ana > details > div#imagensana {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 510px;
+  padding: 0px;
+  justify-content: space-around;
+  margin-bottom: px;
+}
+main > section#relacoes > div#ana > details > div#imagensana > img {
+  width: 200px;
+  margin-bottom: 0px;
+}
+main > section#relacoes > div#ana > details > div#imagensana > img#primeiraimgana {
+  width: 150px;
+  height: 195px;
+  border-radius: 20px 0px 0px 0px;
+}
+main > section#relacoes > div#ana > details > div#imagensana > img#segundaimgana {
+  order: 2;
+  width: 310px;
+  height: 240px;
+  border-radius: 0px 0px 20px 20px;
+}
+main > section#relacoes > div#ana > details > div#imagensana > img#terceiraimgana {
+  width: 150px;
+  height: 200px;
+  border-radius: 0px 20px 0px 0px;
+}
+main > section#relacoes > div#Deus > details{
+  background-color: #ffd4f8cc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+}
+main > section#relacoes > div#Deus > details > div#imagensDeus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 190px;
+  padding: 0px;
+  justify-content: space-around;
+  margin-bottom: px;
+}
+main > section#relacoes > div#Deus > details > div#imagensDeus > img {
+  width: 160px;
+  margin-bottom: 0px;
+}
+main > section#relacoes > div#Deus > details > div#imagensDeus > img#img1 {
+  width: 160px;
+  margin-bottom: 0px;
+  height: 170px;
+  border-radius: 20px 0px 0px 20px;
+}
+main > section#relacoes > div#Deus > details > div#imagensDeus > img#img2 {
+  height: 160px;
+  height: 170px;
+  border-radius: 0px 20px 20px 0px;
+}
+details {
+
+  cursor: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::marker {
+  content: "";
+}
+div#progress {
+  padding: 0px;
+  border-radius: 5px;
+  background-color: white;
+}
